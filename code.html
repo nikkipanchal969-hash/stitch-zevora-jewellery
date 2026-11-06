@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-fixed-variant": "#574500", "surface-variant": "#e4e2de", "on-error": "#ffffff", "on-secondary-fixed": "#341104", "inverse-surface": "#30312e", "inverse-primary": "#ffb2be", "error-container": "#ffdad6", "on-surface": "#1b1c1a", "on-primary-fixed-variant": "#7f263d", "primary-container": "#721c34", "surface-dim": "#dbdad6", "tertiary-fixed": "#ffe088", "soft-blush": "#FDF2F4", "primary": "#54031f", "on-secondary-fixed-variant": "#693a29", "on-secondary": "#ffffff", "blush-tint": "#FCE7EC", "outline": "#887274", "secondary-fixed": "#ffdbcf", "tertiary-container": "#cca730", "outline-variant": "#dac0c3", "background": "#fbf9f5", "surface-tint": "#9d3e54", "charcoal-muted": "#595959", "on-tertiary": "#ffffff", "surface-bright": "#fbf9f5", "surface": "#fbf9f5", "on-secondary-container": "#794735", "on-error-container": "#93000a", "surface-container-high": "#eae8e4", "tertiary-fixed-dim": "#e9c349", "on-primary-fixed": "#3f0015", "rose-gold-light": "#E0A996", "inverse-on-surface": "#f2f0ed", "surface-container-lowest": "#ffffff", "secondary-fixed-dim": "#fab79f", "surface-container-highest": "#e4e2de", "on-background": "#1b1c1a", "secondary": "#85513e", "secondary-container": "#fdbaa1", "on-tertiary-fixed": "#241a00", "surface-pure": "#FFFFFF", "tertiary": "#735c00", "surface-container-low": "#f5f3ef", "surface-container": "#efeeea", "primary-fixed-dim": "#ffb2be", "deep-rosewood": "#4A1525", "primary-fixed": "#ffd9de", "on-primary-container": "#f8859c", "error": "#ba1a1a", "on-surface-variant": "#554245", "charcoal-text": "#262626", "on-primary": "#ffffff", "on-tertiary-container": "#4f3d00" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "1.5rem", "space-xl": "2.5rem", "margin": "4rem", "margin-tablet": "2rem", "margin-mobile": "1.25rem", "space-2xl": "4rem", "space-lg": "1.5rem", "space-md": "1rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "gutter-mobile": "1rem" }, "fontFamily": { "price-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-caps": ["Plus Jakarta Sans"], "display-hero-mobile": ["Playfair Display"], "title-editorial": ["Playfair Display"], "headline-lg": ["Playfair Display"], "headline-sm": ["Playfair Display"], "display-hero": ["Playfair Display"], "label-ui": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Playfair Display"], "headline-md": ["Playfair Display"], "price-md": ["Plus Jakarta Sans"] }, "fontSize": { "price-lg": ["20px", { "lineHeight": "26px", "letterSpacing": "0.01em", "fontWeight": "700" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "label-caps": ["11px", { "lineHeight": "14px", "letterSpacing": "0.12em", "fontWeight": "700" }], "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "title-editorial": ["18px", { "lineHeight": "24px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "headline-sm": ["22px", { "lineHeight": "28px", "fontWeight": "600" }], "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "label-ui": ["13px", { "lineHeight": "18px", "fontWeight": "500" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "500" }], "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "500" }], "price-md": ["16px", { "lineHeight": "22px", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-primary text-on-primary py-space-xs px-margin-mobile md:px-margin-tablet lg:px-margin text-center overflow-hidden"><div class="flex items-center justify-center gap-space-sm font-label-caps text-label-caps tracking-widest uppercase"><span class="truncate">✨ FESTIVE GLOW SALE: Flat 40% OFF with code AURA40 | Free Express Shipping across India on orders above ₹999 | 100% Skin-safe Anti-tarnish Polish</span></div></div><div class="h-20 max-w-[1360px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-1"><button aria-label="Open Menu" class="p-space-xs rounded-full text-on-surface hover:text-primary transition-colors focus:outline-none" type="button"><span class="material-symbols-outlined text-[24px]">menu</span></button><div class="hidden md:flex items-center relative w-full max-w-xs lg:max-w-sm"><span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">search</span><input class="w-full bg-surface-container-low text-on-surface placeholder:text-outline pl-9 pr-4 py-2 rounded-full font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-lowest transition-colors" placeholder="Search Kundan sets, Chokers, Bangles..." type="text"/></div></div><div class="flex items-center justify-center gap-space-sm"><a class="flex items-center gap-space-sm" data-path="home" href="#"><img alt="AURA JEWELS Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1X5oa2uOOZLzd0kcBkvZzVc6T0r33Q4vd5VW4y0vd3U-pbiOWWkHA9-SO6WwGUEe80qMzr6UMl1yrUQDCwDu6NU7mKrmYAumFSfUnpU6bI_pFwhQCQDsfZkS7bsRb6eo2W8Mbw7mFCrLNToeyzKnpZDy65z_yIZdsYDVCQmA4iW1mwpfkJ8RjstGzBVvp6S3I5W6-bTeca6-KVQWQ_5kaZ0kNKemJtlyual6ibaHq0Q"/><span class="font-headline-sm text-headline-sm text-primary tracking-wide hidden sm:inline">AURA JEWELS</span></a></div><div class="flex items-center justify-end gap-space-sm lg:gap-space-md flex-1"><div class="hidden xl:flex items-center gap-space-xs font-label-ui text-label-ui text-on-surface-variant"><span class="material-symbols-outlined text-[16px]">currency_rupee</span><span>INR (₹)</span></div><a class="hidden lg:inline-block font-label-ui text-label-ui text-on-surface-variant hover:text-primary transition-colors" data-path="track-order" href="#">Track Order</a><a aria-label="Wishlist" class="relative p-space-xs text-on-surface-variant hover:text-primary transition-colors" data-path="wishlist" href="#"><span class="material-symbols-outlined text-[24px]">favorite</span><span class="absolute top-1 right-1 bg-primary text-on-primary font-label-caps text-[9px] w-4 h-4 rounded-full flex items-center justify-center">3</span></a><a aria-label="Cart" class="flex items-center gap-space-xs bg-surface-container-low px-3 py-1.5 rounded-full text-on-surface hover:bg-surface-container-high transition-colors" data-path="cart" href="#"><div class="relative flex items-center"><span class="material-symbols-outlined text-[20px] text-primary">shopping_bag</span><span class="absolute -top-1.5 -right-2 bg-primary text-on-primary font-label-caps text-[9px] w-4 h-4 rounded-full flex items-center justify-center">2</span></div><span class="hidden sm:inline font-price-md text-price-md text-on-surface">₹4,499</span></a><a class="hidden sm:inline-flex items-center px-3.5 py-1.5 rounded-full bg-primary text-on-primary font-label-caps text-label-caps tracking-wider uppercase hover:bg-deep-rosewood transition-colors" data-path="checkout" href="#">Checkout</a><a aria-label="Account" class="p-space-xs flex items-center" data-path="account" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMxxbRIdxVT3uOq9QnfOMrAg5mEXULesoVSMO4rmGntyCruq82ZYP7FHjb_mjjwveGiVtfeq8UMMCrk2wlMbyqVQohFkc-vK1jGNzaDAAH1cUaddy0QKtjXjMxFn7PrX8A_19F722pseGEax-sePjUN4KlApT4SnQj1EWkH_7iIgOKMurNrZUircdPEBmWWkoa_48RUBXhqcahSYEuiYrHPKdD_yDcOIG-xmIs8yE"/></a></div></div><div class="h-11 bg-surface-container-lowest shadow-[0_1px_4px_rgba(0,0,0,0.02)] overflow-x-auto scrollbar-none"><div class="max-w-[1360px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin h-full flex items-center"><nav class="flex items-center gap-space-lg whitespace-nowrap" data-active-classes="text-primary font-bold border-b-2 border-primary"><a class="font-label-caps text-label-caps tracking-widest text-on-surface-variant hover:text-primary transition-colors uppercase py-2" data-path="home" href="#">Home</a><a class="font-label-caps text-label-caps tracking-widest text-on-surface-variant hover:text-primary transition-colors uppercase py-2" data-path="earrings-and-jhumkas" href="#">Earrings</a><a class="font-label-caps text-label-caps tracking-widest text-on-surface-variant hover:text-primary transition-colors uppercase py-2" data-path="necklaces-and-chokers" href="#">Necklaces</a><a class="font-label-caps text-label-caps tracking-widest text-on-surface-variant hover:text-primary transition-colors uppercase py-2" data-path="kundan-and-polki" href="#">Kundan & Polki</a><a class="font-label-caps text-label-caps tracking-widest text-on-surface-variant hover:text-primary transition-colors uppercase py-2" data-path="bridal-trousseau" href="#">Bridal Trousseau</a><a aria-current="page" class="tracking-widest transition-colors uppercase py-2 text-primary font-bold border-b-2 border-primary" data-path="product-detail" href="#">Featured Piece</a><a class="font-label-caps text-label-caps tracking-widest text-on-surface-variant hover:text-primary transition-colors uppercase py-2" data-path="all-jewellery" href="#">All Jewellery</a><a class="font-label-caps text-label-caps tracking-widest text-on-surface-variant hover:text-primary transition-colors uppercase py-2" data-path="festive-offers-and-combos" href="#">Festive Combos</a></nav></div></div></header><main class="w-full pt-39 bg-surface min-h-[calc(100vh-280px)]"><div class="flex flex-col w-full">
+<!-- Sticky Micro Sub-Bar for Quick Checkout on Scroll -->
+<div class="fixed bottom-0 left-0 right-0 z-40 bg-surface-pure/95 backdrop-blur-md shadow-2xl transform translate-y-full transition-transform duration-300 md:hidden p-3 flex items-center justify-between gap-3" id="sticky-pdp-bar">
+<div class="flex flex-col min-w-0">
+<span class="font-title-editorial text-sm truncate text-on-surface">Gulmohar Polki Set</span>
+<div class="flex items-center gap-2">
+<span class="font-price-md text-price-md text-primary font-bold">₹2,899</span>
+<span class="text-xs line-through text-outline">₹5,999</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<button class="bg-primary text-on-primary px-4 py-2.5 rounded-full font-label-caps text-label-caps tracking-wider uppercase shadow-md flex items-center gap-1.5 active:scale-95 transition-transform" onclick="handleAddToCart()">
+<span class="material-symbols-outlined text-[16px]">shopping_bag</span>
+<span>Add to Bag</span>
+</button>
+</div>
+</div>
+<!-- Breadcrumb & Top Utility Row -->
+<div class="w-full max-w-[1360px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin pt-4 pb-2">
+<nav aria-label="Breadcrumb" class="flex items-center gap-2 text-on-surface-variant font-label-ui text-xs overflow-x-auto whitespace-nowrap scrollbar-none py-1">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<span class="text-outline/60">/</span>
+<a class="hover:text-primary transition-colors" href="#">Necklaces & Chokers</a>
+<span class="text-outline/60">/</span>
+<a class="hover:text-primary transition-colors" href="#">Bridal Sets</a>
+<span class="text-outline/60">/</span>
+<span class="text-primary font-semibold truncate">Gulmohar Rose-Gold Polki Set</span>
+</nav>
+</div>
+<!-- Main Hero Layout: Product Showcase & Sticky Purchase Console -->
+<section class="w-full max-w-[1360px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin py-4 md:py-6">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+<!-- LEFT: Interactive Gallery Showcase (7 Cols Desktop) -->
+<div class="lg:col-span-7 flex flex-col gap-4">
+<div class="flex flex-col-reverse md:flex-row gap-4 items-start">
+<!-- Thumbnail Bar -->
+<div class="flex md:flex-col gap-3 w-full md:w-24 shrink-0 overflow-x-auto md:overflow-visible pb-2 md:pb-0 scrollbar-none">
+<button class="thumb-btn active relative w-20 md:w-24 aspect-[3/4] rounded-xl overflow-hidden shadow-sm bg-surface-container-low transition-all duration-300 ring-2 ring-primary" onclick="switchPdpImage(0)">
+<img class="w-full h-full object-cover pointer-events-none" data-alt="Gulmohar Rose-Gold Polki choker set displayed on a deep burgundy velvet bust jewelry stand, spotlight highlighting AAA uncut stones and seed pearls in luxury studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvySKd4jABuszq-o3t9xsAA4eC5dU3CWU8ysxm4k5J3DE7p0keIKfxlvkQ09nl18JGBVM1fjS8m3S9BgQnYg1Zt__YHc1SOpzazJeve19sF4OoWlewxr8R78E5Pq4EiTncRaIIrdDIWf3FGihon8zjFeL0TKb6CJBoJoZxG5hW9xUyQYXhbeHF4PjuABug4ah-NMc-r3Ms-VIn1ewDOxkYRXPA45p33fKkRzsOVWg"/>
+<span class="absolute bottom-1 inset-x-1 bg-surface-pure/90 text-primary text-[9px] font-label-caps uppercase text-center rounded py-0.5">Bust</span>
+</button>
+<button class="thumb-btn relative w-20 md:w-24 aspect-[3/4] rounded-xl overflow-hidden shadow-sm bg-surface-container-low transition-all duration-300 opacity-70 hover:opacity-100" onclick="switchPdpImage(1)">
+<img class="w-full h-full object-cover pointer-events-none" data-alt="Elegant Indian bride styled in traditional pastel crimson lehenga wearing the Gulmohar Rose Gold Polki choker set with matching oversized chandbalis and maang tikka, royal editorial portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByLCeX3f80gITTxFvYO5iBtS_eaIoPzaO6Kkzt31HvFKqHHE1L0A1xZfpls343pPjYPCeCwKrgoV8kRgrlJ9yDqcnQSDlc4aX12SbW78AIzu8SNTGbqF3kyADpl_QP98lVIhGYMNfkRr9itBWhoXMKUNPYUP1TUn-pEMbzren41kfqjSYLbM6wsRjqCdSsSoZAaNFfx-BBBv5FVIEIoBkyL8GlKILrB_nwgGxqVNE"/>
+<span class="absolute bottom-1 inset-x-1 bg-surface-pure/90 text-primary text-[9px] font-label-caps uppercase text-center rounded py-0.5">Model</span>
+</button>
+<button class="thumb-btn relative w-20 md:w-24 aspect-[3/4] rounded-xl overflow-hidden shadow-sm bg-surface-container-low transition-all duration-300 opacity-70 hover:opacity-100" onclick="switchPdpImage(2)">
+<img class="w-full h-full object-cover pointer-events-none" data-alt="Macro extreme close-up of intricate hand-painted crimson and blush meenakari enamel work and bezel-set Polki kundan glass stones on the reverse side of bridal necklace" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlCMWe6TPko4-059QNu7Uc3Cule35uNXKMJW65E8lSD-DcePrYUCWVAc-x5Kdf4A3EejvFJFRMkQZgYTD2EBcqgeBqvyQrW5t8AT9UcT3Kmauxh1Lef5cHg7so5KTs0pT9IMoyGIp2rHBa1_PO6Jr6HtccmGQWAYtMhZLCepiBrCei08xRaSMrw-PrymcAr_oyx5J1lOxJAj0U1SgnoJL7yYbvs-KBgrasfrs5SuY"/>
+<span class="absolute bottom-1 inset-x-1 bg-surface-pure/90 text-primary text-[9px] font-label-caps uppercase text-center rounded py-0.5">Detail</span>
+</button>
+<button class="thumb-btn relative w-20 md:w-24 aspect-[3/4] rounded-xl overflow-hidden shadow-sm bg-surface-container-low transition-all duration-300 opacity-70 hover:opacity-100" onclick="switchPdpImage(3)">
+<img class="w-full h-full object-cover pointer-events-none" data-alt="Luxury unboxing packaging featuring rich royal rosewood velvet trunk box with gold embossed AURA JEWELS crest holding the choker set cushioned in satin with certificate of authenticity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_UYlk8HQkz96jhTMLygQImfCTeHLHztWp6dHaNWd-z3dJDhx_ULkBrl5xm5JtHuiwX1maHTuOoKwo1uW-YwoZgrETDzVL7pVduRsi9-f_qsh1gl8JM8OfSyryEHljjzqVshusaYbF3S6Rzsp3tgCFf-Z8Kg7Lw_xpMSH7EIH144MDwNxKnuggmhwi3dSPhb7k41Xk3KfeRdTEP0AcVYPJMmxJB44GoBLWC6gfQ9c"/>
+<span class="absolute bottom-1 inset-x-1 bg-surface-pure/90 text-primary text-[9px] font-label-caps uppercase text-center rounded py-0.5">Package</span>
+</button>
+</div>
+<!-- Main Interactive Large Image Container -->
+<div class="relative w-full flex-1 aspect-[3/4] bg-surface-container-lowest rounded-2xl overflow-hidden shadow-xl group cursor-zoom-in">
+<!-- Badges Layered Over Image -->
+<div class="absolute top-4 left-4 z-20 flex flex-col gap-2">
+<span class="inline-flex items-center gap-1.5 bg-primary text-on-primary px-3 py-1 rounded-full font-label-caps text-[10px] tracking-widest uppercase shadow-md backdrop-blur-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-rose-gold-light animate-pulse"></span>
+                Bestseller 2025
+              </span>
+<span class="inline-flex items-center gap-1 bg-surface-pure/90 text-secondary px-2.5 py-1 rounded-full font-label-caps text-[10px] uppercase shadow-sm backdrop-blur-sm">
+<span class="material-symbols-outlined text-[14px]">view_in_ar</span>
+                360° Studio View
+              </span>
+</div>
+<!-- Floating Quick Action Buttons on Image -->
+<div class="absolute top-4 right-4 z-20 flex flex-col gap-2">
+<button aria-label="Add to Wishlist" class="w-10 h-10 rounded-full bg-surface-pure/90 hover:bg-surface-pure text-primary flex items-center justify-center shadow-lg transition-transform hover:scale-110 active:scale-95" onclick="toggleWishlist(this)">
+<span class="material-symbols-outlined text-[20px] transition-colors">favorite_border</span>
+</button>
+<button aria-label="Watch Video Lookbook" class="w-10 h-10 rounded-full bg-surface-pure/90 hover:bg-surface-pure text-secondary flex items-center justify-center shadow-lg transition-transform hover:scale-110 active:scale-95" onclick="openVideoModal()" title="Video Lookbook">
+<span class="material-symbols-outlined text-[20px]">videocam</span>
+</button>
+</div>
+<!-- Hover Zoom Hint Pill -->
+<div class="absolute bottom-4 left-4 z-20 pointer-events-none">
+<div class="inline-flex items-center gap-1.5 bg-surface-pure/85 backdrop-blur-md px-3 py-1.5 rounded-full text-on-surface text-xs font-label-ui shadow-md">
+<span class="material-symbols-outlined text-[15px] text-primary">zoom_in</span>
+<span>Roll over to explore filigree</span>
+</div>
+</div>
+<!-- Main Dynamic Image Display -->
+<div class="w-full h-full relative overflow-hidden" id="pdp-main-image-wrapper">
+<img class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-125" data-alt="Gulmohar Rose-Gold Polki choker set displayed on a deep burgundy velvet bust jewelry stand, spotlight highlighting AAA uncut stones and seed pearls in luxury studio lighting" id="pdp-main-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5EDcb5ppr2mFmfMQRJMxFYBJ6N3pSS-vnLV-8YlsYI_fr7cctbrbK1KKiQ5Bn_sRDdIJpmi8affNMA0VpwIC7mdmUKN_FWlbof_odg7GvfA-7qF1C83opWGF15EZpF2EpBkgSdVE-YG-7Y5gQMUNxtpmN-Twt_3huw43K-ynzcQ39f-89vmGBUhd0-flLqMxuuO5w30e5FvxME2HE_XbF5o1WCgQxN6z20_Z9mhI"/>
+</div>
+<!-- Live Viewer Counter Pill -->
+<div class="absolute bottom-4 right-4 z-20 bg-surface-pure/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-label-ui text-primary flex items-center gap-1.5 shadow-md">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-error opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-error"></span>
+</span>
+<span><strong>48 brides</strong> viewing now</span>
+</div>
+</div>
+</div>
+<!-- Assurance Micro Strip Under Showcase -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-3 pt-2">
+<div class="flex items-center gap-2 p-3 bg-surface-container-lowest rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">verified</span>
+<div class="flex flex-col">
+<span class="font-label-caps text-[10px] text-primary uppercase font-bold">22K Micron</span>
+<span class="text-[11px] text-charcoal-muted leading-tight">E-Coated Plating</span>
+</div>
+</div>
+<div class="flex items-center gap-2 p-3 bg-surface-container-lowest rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">spa</span>
+<div class="flex flex-col">
+<span class="font-label-caps text-[10px] text-primary uppercase font-bold">Hypoallergenic</span>
+<span class="text-[11px] text-charcoal-muted leading-tight">Lead & Nickel Free</span>
+</div>
+</div>
+<div class="flex items-center gap-2 p-3 bg-surface-container-lowest rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">handyman</span>
+<div class="flex flex-col">
+<span class="font-label-caps text-[10px] text-primary uppercase font-bold">Handcrafted</span>
+<span class="text-[11px] text-charcoal-muted leading-tight">Jaipur Artisans</span>
+</div>
+</div>
+<div class="flex items-center gap-2 p-3 bg-surface-container-lowest rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">featured_seasonal_and_gifts</span>
+<div class="flex flex-col">
+<span class="font-label-caps text-[10px] text-primary uppercase font-bold">Royal Velvet</span>
+<span class="text-[11px] text-charcoal-muted leading-tight">Heirloom Gift Box</span>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT: Sticky Product Metadata & Purchase Conversion Hub (5 Cols Desktop) -->
+<div class="lg:col-span-5 flex flex-col gap-6 lg:sticky lg:top-36">
+<!-- Collection Metadata & Title -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between gap-2">
+<span class="font-label-caps text-label-caps tracking-widest uppercase text-secondary font-bold">AURA ATELIER HERITAGE NOIR</span>
+<span class="bg-error-container text-error font-label-caps text-[10px] px-2.5 py-0.5 rounded-full uppercase tracking-wider font-bold">Only 3 Left</span>
+</div>
+<h1 class="font-headline-md text-headline-md text-on-surface leading-tight font-medium">
+            Gulmohar Rose-Gold Polki & Heritage Pearl Choker Set
+          </h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Includes matching statement Chandbalis & handcrafted floral Maang Tikka.</p>
+<!-- Social Proof & Review Score -->
+<div class="flex items-center gap-3 pt-1">
+<div class="flex items-center gap-1 bg-surface-container px-2.5 py-1 rounded-md">
+<span class="text-xs font-bold text-on-surface">4.9</span>
+<div class="flex text-tertiary">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+</div>
+<a class="text-xs font-label-ui text-primary underline underline-offset-4 hover:text-deep-rosewood transition-colors" href="#reviews-anchor">
+              489 Verified Bridal Reviews
+            </a>
+<span class="text-outline/40">•</span>
+<span class="text-xs text-charcoal-muted">SKU: AUR-POL-24GLM</span>
+</div>
+</div>
+<!-- Pricing Block -->
+<div class="p-4 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-2">
+<div class="flex items-baseline gap-3">
+<span class="font-price-lg text-[32px] text-primary font-bold">₹2,899</span>
+<span class="text-base line-through text-outline">₹5,999</span>
+<span class="bg-blush-tint text-primary font-label-caps text-xs px-2.5 py-1 rounded-full font-bold uppercase tracking-wider">
+              52% OFF (Save ₹3,100)
+            </span>
+</div>
+<p class="text-[12px] text-charcoal-muted">MRP inclusive of all luxury taxes & complementary insured doorstep transit.</p>
+</div>
+<!-- 1-Click Festive Offers Tray -->
+<div class="p-4 rounded-2xl bg-soft-blush/60 shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-primary">
+<span class="material-symbols-outlined text-[18px]">local_offer</span>
+<span class="font-label-caps text-xs uppercase tracking-wider font-bold">Curated Festive Offers</span>
+</div>
+<span class="text-[11px] text-primary font-semibold">2 Coupons Available</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+<div class="p-3 bg-surface-pure rounded-xl shadow-xs flex flex-col justify-between gap-2">
+<div class="flex flex-col">
+<span class="font-label-caps text-[11px] text-primary font-bold tracking-wider">EXTRA 15% OFF</span>
+<span class="text-[11px] text-charcoal-muted">Use Code: <strong>AURA15</strong></span>
+</div>
+<button class="w-full bg-soft-blush hover:bg-blush-tint text-primary text-[11px] font-label-caps uppercase py-1.5 rounded-lg transition-colors font-bold" onclick="applyCoupon(this, 'AURA15', 434)">
+                Apply Code
+              </button>
+</div>
+<div class="p-3 bg-surface-pure rounded-xl shadow-xs flex flex-col justify-between gap-2">
+<div class="flex flex-col">
+<span class="font-label-caps text-[11px] text-secondary font-bold tracking-wider">FLAT ₹500 OFF</span>
+<span class="text-[11px] text-charcoal-muted">On orders > ₹2,499</span>
+</div>
+<button class="w-full bg-surface-container hover:bg-surface-container-high text-on-surface text-[11px] font-label-caps uppercase py-1.5 rounded-lg transition-colors font-bold" onclick="applyCoupon(this, 'ROYAL500', 500)">
+                Apply Code
+              </button>
+</div>
+</div>
+<p class="text-[11px] text-primary font-semibold hidden" id="coupon-feedback"></p>
+</div>
+<!-- Finish / Plating Swatches -->
+<div class="flex flex-col gap-2.5">
+<div class="flex items-center justify-between">
+<label class="font-label-caps text-xs text-on-surface uppercase tracking-wider font-bold">
+              Finish: <span class="text-primary font-bold" id="selected-finish-name">18K Rose Gold Plated</span>
+</label>
+<span class="text-[11px] text-charcoal-muted">Micro-e-coated</span>
+</div>
+<div class="flex items-center gap-3">
+<!-- Swatch 1: Selected -->
+<button class="finish-swatch active flex items-center gap-2.5 px-3 py-2 rounded-xl bg-surface-pure shadow-sm ring-2 ring-primary transition-all" onclick="selectFinish('18K Rose Gold Plated', this)">
+<span class="w-5 h-5 rounded-full bg-gradient-to-tr from-[#C98A7D] via-[#E8B4A8] to-[#F7D8D0] shadow-inner"></span>
+<span class="text-xs font-label-ui font-semibold text-on-surface">Rose Gold</span>
+</button>
+<!-- Swatch 2 -->
+<button class="finish-swatch flex items-center gap-2.5 px-3 py-2 rounded-xl bg-surface-pure shadow-sm hover:bg-surface-container-low transition-all" onclick="selectFinish('22K Antique Yellow Gold', this)">
+<span class="w-5 h-5 rounded-full bg-gradient-to-tr from-[#B38F38] via-[#E5C158] to-[#FCE592] shadow-inner"></span>
+<span class="text-xs font-label-ui text-on-surface-variant">Antique Gold</span>
+</button>
+<!-- Swatch 3 -->
+<button class="finish-swatch flex items-center gap-2.5 px-3 py-2 rounded-xl bg-surface-pure shadow-sm hover:bg-surface-container-low transition-all" onclick="selectFinish('Royal Silver Meenakari', this)">
+<span class="w-5 h-5 rounded-full bg-gradient-to-tr from-[#9EA3A8] via-[#D1D5DB] to-[#F3F4F6] shadow-inner"></span>
+<span class="text-xs font-label-ui text-on-surface-variant">Silver Jadau</span>
+</button>
+</div>
+</div>
+<!-- Fit & Sizing Indicator -->
+<div class="p-3 bg-surface-container-low rounded-xl flex items-center justify-between text-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">straighten</span>
+<span class="text-on-surface font-label-ui"><strong>Size:</strong> Free-Size Flexible Contour</span>
+</div>
+<span class="text-charcoal-muted">Adjustable handcrafted gold dori tie</span>
+</div>
+<!-- Primary High-Conversion Call To Actions -->
+<div class="flex flex-col gap-3 pt-2">
+<button class="w-full bg-primary hover:bg-deep-rosewood text-on-primary py-4 px-6 rounded-full font-label-caps text-sm uppercase tracking-widest shadow-xl flex items-center justify-center gap-3 active:scale-[0.99] transition-all" id="add-to-bag-cta" onclick="handleAddToCart()">
+<span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+<span id="bag-button-text">ADD TO TROUSSEAU BAG</span>
+</button>
+<button class="w-full bg-surface-pure hover:bg-soft-blush text-primary py-3.5 px-6 rounded-full font-label-caps text-sm uppercase tracking-widest shadow-sm flex items-center justify-center gap-2 transition-all" onclick="handleQuickUPI()">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+<span>BUY NOW WITH 1-CLICK UPI</span>
+</button>
+</div>
+<!-- Interactive Pincode & Delivery Checker -->
+<div class="p-4 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-2.5">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">local_shipping</span>
+<span class="font-label-caps text-xs text-on-surface uppercase tracking-wider font-bold">Check Express Delivery</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="relative flex-1">
+<input class="w-full bg-surface-container-low px-3.5 py-2.5 rounded-xl font-label-ui text-xs text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-pure transition-colors" id="pincode-input" maxlength="6" placeholder="Enter 6-digit Pincode (e.g. 560001)" type="text"/>
+</div>
+<button class="bg-primary text-on-primary font-label-caps text-xs uppercase px-4 py-2.5 rounded-xl hover:bg-deep-rosewood transition-colors" onclick="checkDeliveryPincode()">
+              Verify
+            </button>
+</div>
+<div class="text-xs pt-1 flex flex-col gap-1 text-charcoal-muted" id="pincode-result">
+<div class="flex items-center gap-1.5 text-on-surface font-medium">
+<span class="material-symbols-outlined text-tertiary text-[16px]">schedule</span>
+<span>Order today for delivery by <strong>Thursday, 2-3 Days</strong></span>
+</div>
+<span class="text-[11px] text-charcoal-muted">Free Doorstep Delivery • Cash on Delivery Available • Insured Fragile Courier</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Complete The Look: Curated Bridal Trousseau Bundle Cross-Sell -->
+<section class="w-full max-w-[1360px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin py-10">
+<div class="p-6 md:p-8 rounded-3xl bg-surface-container-lowest shadow-md flex flex-col gap-6">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps tracking-widest uppercase text-secondary font-bold">ATELIER STYLING SUITE</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Complete The Regal Bridal Ensemble</h2>
+</div>
+<div class="inline-flex items-center gap-2 bg-soft-blush px-3.5 py-1.5 rounded-full text-primary font-label-caps text-xs uppercase font-bold self-start md:self-auto">
+<span class="material-symbols-outlined text-[16px]">redeem</span>
+<span>Bundle & Save 20% Extra</span>
+</div>
+</div>
+<!-- 3-Item Connected Merchandising Row -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-4 items-center">
+<!-- Piece 1: Current Item (Pre-selected) -->
+<div class="md:col-span-3 p-3 rounded-2xl bg-surface-pure shadow-xs flex items-center gap-3">
+<img class="w-16 h-20 object-cover rounded-xl shrink-0" data-alt="Gulmohar Rose-Gold Polki choker detail photo thumbnail" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATuJjQHOq5te983XXOQDGKPekC_tlAnpI1irMBfrcc2_RqmoTPFk3FzmQzEzget_MMP7xOjB-sCbQjZ6yqSqq6LAIZnFGrEozDnOOxZY-i49stNigPwVectKrkZNdbGbJe1uepgUFaMr2rFQDF4KqSW-xUHqezWKCx_sOosI8icTv7M0d3Ywpy4MbfrRw_8wGTRUQ4RKTuInMUUQ9BJZO7rIpIsSf8ue2orrdHh28"/>
+<div class="flex flex-col min-w-0">
+<span class="text-[11px] font-label-caps uppercase text-primary font-bold">Primary Piece</span>
+<span class="font-title-editorial text-xs truncate text-on-surface font-bold">Gulmohar Choker Set</span>
+<span class="font-price-md text-xs text-primary font-bold pt-1">₹2,899</span>
+</div>
+</div>
+<div class="hidden md:flex md:col-span-1 justify-center text-outline">
+<span class="material-symbols-outlined text-[24px]">add</span>
+</div>
+<!-- Piece 2: Haathphool Add-on -->
+<div class="md:col-span-3 p-3 rounded-2xl bg-surface-pure shadow-xs flex items-center justify-between gap-3">
+<div class="flex items-center gap-3 min-w-0">
+<img class="w-16 h-20 object-cover rounded-xl shrink-0" data-alt="Matching Gulmohar Polki Haathphool bridal hand harness with delicate pearl chains on model hands with henna mehendi" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCShFiBdnDusGhhn3-7mWPpm0bawhaG8b-Dif-1_TiV-RygBOl8efJbM32NQuBlQvmVwetyUzkGF5hcoDuBAvcapmCHt-xLOh3iEqc-lc1F9J7L72o539d55odY0vln0dQTruVY0ZnzQytwAZTS3Hn0yYNiffbv175XS20NARhbvBCy8lTA2W5Yy8VhgvutDH_8RBhNcQfPK2hOV6fg9KCJtea-U8-_i1oQYqY9u4k"/>
+<div class="flex flex-col min-w-0">
+<span class="text-[11px] font-label-caps uppercase text-secondary font-bold">Matching Accent</span>
+<span class="font-title-editorial text-xs truncate text-on-surface">Gulmohar Haathphool Pair</span>
+<span class="font-price-md text-xs text-on-surface font-semibold pt-1">+₹999</span>
+</div>
+</div>
+<input checked="" class="w-5 h-5 rounded accent-primary cursor-pointer shrink-0" id="bundle-item-1" onchange="updateBundleTotal()" type="checkbox"/>
+</div>
+<div class="hidden md:flex md:col-span-1 justify-center text-outline">
+<span class="material-symbols-outlined text-[24px]">add</span>
+</div>
+<!-- Piece 3: Traditional Bridal Nath -->
+<div class="md:col-span-3 p-3 rounded-2xl bg-surface-pure shadow-xs flex items-center justify-between gap-3">
+<div class="flex items-center gap-3 min-w-0">
+<img class="w-16 h-20 object-cover rounded-xl shrink-0" data-alt="Royal heritage uncut polki bridal nose ring nath with layered pearl chain and rose-gold embellishments" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUReoh3XpFD7aVnMWExxqDBN-FQVsTM-gsPJV5wf87xQ0Khyn3H6zagV66vp3A42HFbmnWbTde6OWSLnoXc-PtyYcOc5aY0enR8IF8QQXg7hpIF9jszlpkvYYgVofuQVkcIqZGEDUuvgT2uuyHFwcatDGX2aeBScoZwM6uVToUzghlvFgbQqgy42fAUFRalGmKW8rYMEUajbN2DZobg85EkUqtVsV4HhCRrfPBKxk"/>
+<div class="flex flex-col min-w-0">
+<span class="text-[11px] font-label-caps uppercase text-secondary font-bold">Bridal Crown</span>
+<span class="font-title-editorial text-xs truncate text-on-surface">Kundan Pearl Nath</span>
+<span class="font-price-md text-xs text-on-surface font-semibold pt-1">+₹500</span>
+</div>
+</div>
+<input checked="" class="w-5 h-5 rounded accent-primary cursor-pointer shrink-0" id="bundle-item-2" onchange="updateBundleTotal()" type="checkbox"/>
+</div>
+<!-- Bundle CTA Pillar -->
+<div class="md:col-span-12 lg:col-span-12 pt-4 flex flex-col sm:flex-row items-center justify-between gap-4 bg-surface-container-low p-4 rounded-2xl">
+<div class="flex flex-col">
+<span class="text-xs text-charcoal-muted">Combined Ensemble Price:</span>
+<div class="flex items-baseline gap-2">
+<span class="font-price-lg text-2xl text-primary font-bold" id="bundle-total-price">₹3,918</span>
+<span class="text-xs line-through text-outline" id="bundle-original-price">₹4,898</span>
+<span class="text-xs text-primary font-bold">You Save ₹980 (Extra 20% Bundle Discount)</span>
+</div>
+</div>
+<button class="w-full sm:w-auto bg-primary hover:bg-deep-rosewood text-on-primary px-8 py-3 rounded-full font-label-caps text-xs uppercase tracking-wider shadow-md transition-all active:scale-95 whitespace-nowrap" onclick="addAllBundleToBag()">
+            Add All 3 to Bag & Save 20%
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Deep Dive Specifications & Artisan Insights (Tabbed & Accordion Grid) -->
+<section class="w-full max-w-[1360px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin py-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Left Column: Curated Spec Accordions -->
+<div class="lg:col-span-7 flex flex-col gap-4">
+<h3 class="font-headline-sm text-headline-sm text-on-surface pb-2">Craftsmanship & Specifications</h3>
+<!-- Accordion 1: Product Details -->
+<div class="rounded-2xl bg-surface-container-lowest shadow-sm overflow-hidden">
+<button class="w-full p-4 flex items-center justify-between text-left text-on-surface hover:text-primary transition-colors" onclick="toggleAccordion('spec-1')">
+<span class="font-title-editorial text-sm font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">diamond</span>
+              Jewellery Dimensions & Purity Matrix
+            </span>
+<span class="material-symbols-outlined text-[20px] transition-transform" id="icon-spec-1">expand_more</span>
+</button>
+<div class="px-4 pb-4 flex flex-col gap-3" id="content-spec-1">
+<div class="grid grid-cols-2 gap-3 text-xs">
+<div class="p-2.5 bg-surface-container-low rounded-xl flex flex-col gap-0.5">
+<span class="font-label-caps text-[10px] text-charcoal-muted uppercase">Gross Weight</span>
+<span class="font-semibold text-on-surface">142 Grams (Balanced)</span>
+</div>
+<div class="p-2.5 bg-surface-container-low rounded-xl flex flex-col gap-0.5">
+<span class="font-label-caps text-[10px] text-charcoal-muted uppercase">Base Material</span>
+<span class="font-semibold text-on-surface">Hypoallergenic Micro-Brass</span>
+</div>
+<div class="p-2.5 bg-surface-container-low rounded-xl flex flex-col gap-0.5">
+<span class="font-label-caps text-[10px] text-charcoal-muted uppercase">Stone Grade</span>
+<span class="font-semibold text-on-surface">AAA+ Uncut Polki Glass Jadau</span>
+</div>
+<div class="p-2.5 bg-surface-container-low rounded-xl flex flex-col gap-0.5">
+<span class="font-label-caps text-[10px] text-charcoal-muted uppercase">Choker Height</span>
+<span class="font-semibold text-on-surface">6.8 cm (Collar Contour)</span>
+</div>
+<div class="p-2.5 bg-surface-container-low rounded-xl flex flex-col gap-0.5">
+<span class="font-label-caps text-[10px] text-charcoal-muted uppercase">Earring Drop</span>
+<span class="font-semibold text-on-surface">8.2 cm Chandbali Length</span>
+</div>
+<div class="p-2.5 bg-surface-container-low rounded-xl flex flex-col gap-0.5">
+<span class="font-label-caps text-[10px] text-charcoal-muted uppercase">Back Enameling</span>
+<span class="font-semibold text-on-surface">Authentic Rose Meenakari</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Accordion 2: Styling Notes -->
+<div class="rounded-2xl bg-surface-container-lowest shadow-sm overflow-hidden">
+<button class="w-full p-4 flex items-center justify-between text-left text-on-surface hover:text-primary transition-colors" onclick="toggleAccordion('spec-2')">
+<span class="font-title-editorial text-sm font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">styler</span>
+              Atelier Styling & Occasion Guide
+            </span>
+<span class="material-symbols-outlined text-[20px] transition-transform" id="icon-spec-2">expand_more</span>
+</button>
+<div class="px-4 pb-4 text-xs text-charcoal-muted flex flex-col gap-2.5 leading-relaxed" id="content-spec-2">
+<p>
+              Designed primarily for <strong>Bridal Weddings, Sangeet galas, and Reception banquets</strong>. The warm rose gold sheen pairs seamlessly with velvet crimson, ivory, pastel blush, or mint green Lehengas, as well as heritage Kanjeevaram and Banarasi silk sarees.
+            </p>
+<div class="flex items-center gap-2 p-2.5 bg-soft-blush rounded-xl text-primary font-medium text-[11px]">
+<span class="material-symbols-outlined text-[16px]">tips_and_updates</span>
+<span>Pro Tip: Fasten the choker snug over collarbones first, then adjust the back silk dori knots for all-night comfort.</span>
+</div>
+</div>
+</div>
+<!-- Accordion 3: Care Guidelines -->
+<div class="rounded-2xl bg-surface-container-lowest shadow-sm overflow-hidden">
+<button class="w-full p-4 flex items-center justify-between text-left text-on-surface hover:text-primary transition-colors" onclick="toggleAccordion('spec-3')">
+<span class="font-title-editorial text-sm font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">cleaning_services</span>
+              Heirloom Longevity & Maintenance
+            </span>
+<span class="material-symbols-outlined text-[20px] transition-transform" id="icon-spec-3">expand_more</span>
+</button>
+<div class="px-4 pb-4 text-xs text-charcoal-muted flex flex-col gap-2 leading-relaxed" id="content-spec-3">
+<ul class="flex flex-col gap-1.5 list-disc pl-4 text-[12px]">
+<li>Apply makeup, hairspray, and perfume before donning your jewelry.</li>
+<li>Wipe gently after use with the complimentary microfibre cloth provided.</li>
+<li>Always store individually in the airtight zip pouch inside the velvet trunk to prevent moisture oxidation.</li>
+<li>Clean solely with a dry soft bristle brush; avoid water soaking.</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Right Column: Artisan Jaipur Heritage Story Card -->
+<div class="lg:col-span-5 flex flex-col">
+<div class="relative w-full h-full min-h-[360px] rounded-3xl overflow-hidden shadow-lg p-6 md:p-8 flex flex-col justify-end text-on-primary bg-primary-container">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-25 mix-blend-luminosity" data-alt="Master craftsman in Jaipur workshop shaping intricate Polki Jadau jewellery by hand under warm golden lamp with traditional tools" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBc0C8LvIz0PNPnXPvNMg6cpgmwQ9QexkNXfF_7_-LT4rksx2ixbULMTBdi3dxk_sJvhjkeTeDO_3CZ8BpXihNE5U5Gz7CpXLFL9dUTM_h53VPX1-4yxjkTRcO9uP5vMO9NR6ALga-Q-OSQyuq8iZnlvrCIw6t4_6fVBuXtpy34cUoR87DeZl2U5K_52ngqSEirdxqfdMpLvyyG32mvU-boz6aNGbyCGga1n4i5bos"/>
+<div class="absolute inset-0 bg-gradient-to-t from-deep-rosewood via-primary/80 to-transparent"></div>
+</div>
+<div class="relative z-10 flex flex-col gap-3">
+<div class="inline-flex items-center gap-1.5 bg-surface-pure/20 backdrop-blur-md px-3 py-1 rounded-full text-[11px] font-label-caps uppercase self-start tracking-wider">
+              Jaipur Johari Bazaar Legacy
+            </div>
+<h4 class="font-headline-sm text-headline-sm text-surface-pure">Sculpted by 4th Generation Jadau Artisans</h4>
+<p class="text-xs text-surface-bright/80 leading-relaxed font-body-sm">
+              Each stone in the Gulmohar set is hand-cut and collet-mounted using the centuries-old Jadau technique. We glaze the reverse surface with water-resistant meenakari hues so your heirloom never discolors on delicate bridal silks.
+            </p>
+<div class="pt-2 flex items-center gap-4 text-xs font-label-ui">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-tertiary-fixed text-[18px]">verified</span>
+<span>Hallmark Certified</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-tertiary-fixed text-[18px]">eco</span>
+<span>Conscious Craft</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Comprehensive Bridal Reviews Hub -->
+<section class="w-full max-w-[1360px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin py-10" id="reviews-anchor">
+<div class="p-6 md:p-10 rounded-3xl bg-surface-container-lowest shadow-sm flex flex-col gap-8">
+<!-- Reviews Header & Breakdown Bar Widget -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<!-- Score Column -->
+<div class="lg:col-span-4 flex flex-col items-center lg:items-start text-center lg:text-left gap-2">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary font-bold">CLIENT EXPERIENCES</span>
+<div class="flex items-baseline gap-3">
+<span class="font-headline-lg text-5xl text-primary font-bold">4.9</span>
+<span class="text-charcoal-muted font-body-sm">out of 5.0</span>
+</div>
+<div class="flex text-tertiary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-xs text-charcoal-muted">Based on 489 verified bridal trousseau reviews</p>
+<button class="mt-2 bg-surface-container-low hover:bg-surface-container text-on-surface px-5 py-2 rounded-full font-label-caps text-xs uppercase tracking-wider transition-colors">
+            Write a Review
+          </button>
+</div>
+<!-- Rating Progress Rings / Bars Column -->
+<div class="lg:col-span-8 flex flex-col gap-2.5">
+<div class="flex items-center gap-3 text-xs">
+<span class="w-12 text-on-surface font-medium">5 Star</span>
+<div class="flex-1 h-2.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 92%;"></div>
+</div>
+<span class="w-10 text-right text-charcoal-muted font-semibold">92%</span>
+</div>
+<div class="flex items-center gap-3 text-xs">
+<span class="w-12 text-on-surface font-medium">4 Star</span>
+<div class="flex-1 h-2.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary/70 rounded-full" style="width: 6%;"></div>
+</div>
+<span class="w-10 text-right text-charcoal-muted font-semibold">6%</span>
+</div>
+<div class="flex items-center gap-3 text-xs">
+<span class="w-12 text-on-surface font-medium">3 Star</span>
+<div class="flex-1 h-2.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary/40 rounded-full" style="width: 1.5%;"></div>
+</div>
+<span class="w-10 text-right text-charcoal-muted font-semibold">1.5%</span>
+</div>
+<div class="flex items-center gap-3 text-xs">
+<span class="w-12 text-on-surface font-medium">2 Star</span>
+<div class="flex-1 h-2.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-outline rounded-full" style="width: 0.5%;"></div>
+</div>
+<span class="w-10 text-right text-charcoal-muted font-semibold">0.5%</span>
+</div>
+<div class="flex items-center gap-3 text-xs">
+<span class="w-12 text-on-surface font-medium">1 Star</span>
+<div class="flex-1 h-2.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-outline rounded-full" style="width: 0%;"></div>
+</div>
+<span class="w-10 text-right text-charcoal-muted font-semibold">0%</span>
+</div>
+</div>
+</div>
+<!-- Real Buyer Photo Showcase Mini-Grid -->
+<div class="flex flex-col gap-3 pt-2">
+<span class="font-label-caps text-xs uppercase tracking-wider text-on-surface font-bold">Real Brides Wearing Gulmohar</span>
+<div class="grid grid-cols-3 sm:grid-cols-6 gap-2.5">
+<div class="aspect-square rounded-xl overflow-hidden bg-surface-container-low shadow-xs">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform" data-alt="Customer photo of bride wearing Gulmohar choker set during her sangeet ceremony dancing with family" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpg7j-HQRk821TyfN27Qd6oC5vKhTG2x8H9rwf6HAE51MTwyeIxFw-9gVAqRLCaWNTCYs-44oIzVNpV9UJPSRIDv-rQldi9oVsqe5KzTl4Z6aEPWdIjVWo2eoZAzygO--EqiKPYFywrxa8xUtgFDksoRHk7oyR4eVJXjg_Z-35X5FLy2cXBYQTyVuG8mGd-V8dz64IEGXpmsk5T_gggctHuUTNlCkHXmL1OgW5v1M"/>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden bg-surface-container-low shadow-xs">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform" data-alt="Customer photo of bride getting ready with makeup artist pinning the Gulmohar maang tikka on her forehead" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_fMyoMZkTfFAjAIINFzwLVLWG-06WYhCJsJOn6OUmWMGdmAqS5gu9YmNkyDsGr200ayP_AbOgGTawINbw7zeELylrGzaPYboYRE3uX22Xj3z7tJN4HZY7Tr6vezg8OwEPFLYyLmjaShN1RwaUlgFT42H05pcOXN6IA2RWSKkYzQUBB1APcA0scMfVQtSxMozEFJt9_OJlEm2dFhU-b38thQvzw9BThSRyEnQRzEk"/>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden bg-surface-container-low shadow-xs">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform" data-alt="Unboxing photo taken by customer of the Gulmohar jewelry set inside its rosewood velvet box with flowers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY5Mdi350EjSoyjcZzN1GYL4W0cQOyhY3-ruXeBnN2ZDtIoTdNQxkUjal1kUI_am7R2Z8l_sRUwpTT6_SSuAei7gB5JQX-VaiyVOW-uvyrF8luEriAnY0IXn640AfvJT-F2rh8EkBNw-bar4laIGQpa4MIpYaJ-lUVclnr5kcDcOBYvuhKGlLD722jvAO-pK_3e6CybCS0aMivJrC53DMlBbHRGNo5M7nbdJCgkR0"/>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden bg-surface-container-low shadow-xs">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform" data-alt="Portrait photo of real bride in Bangalore wedding wearing the Gulmohar Polki set paired with gold silk Kanjeevaram saree" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3eSUvcyHbvfivWLQ2y35mMYSZ7MycJYkdsKCjM3NAIS3svNYKiu13JtxblUq9v5Y3jjmUMsMPfzRGNFZnjfe1fWrKd4LuCfiJ-RM4BU3ogjyl2TosSTokKvXgu8Ey5l9ul3vvKO0f8vsjUO8n6BuuRfl6ZmkBMWhH8qcBHzIB_wQ-XnLNwmXJ6SXaghrTvcmxzypXP43vbUfIqkhtF0hZKmUHRI8INsa1ANUFjVM"/>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden bg-surface-container-low shadow-xs">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform" data-alt="Close up wedding photograph of the bride wearing the Chandbalis from Gulmohar set smiling softly" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCca1wJaDDs2eubBjMgn_aodrcMcFIA0B95TMQ-GPTi589gb1qcOMbX1UFwviRRPsW-CLzm1qggSkRyVy_0x1ipfNXS03xtcn24f3rN_BTia2Wy5DbJitNCDVEhD2KWIqZ-hl-ZjdOy560NBDR-9B6G8BJnhJinpDQ0l9nB7jTdXxn6bbSDxEbHlbcDcorZMsj2kaQ_-5wKJoBWSduT8U3bx8KHZOCKuJ6iLDe7ph4"/>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden bg-surface-container-low shadow-xs flex items-center justify-center bg-soft-blush text-primary text-center p-2 cursor-pointer hover:bg-blush-tint transition-colors">
+<span class="font-label-caps text-[11px] font-bold">+140 Photos</span>
+</div>
+</div>
+</div>
+<!-- Curated Reviews Feed -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
+<!-- Review 1 -->
+<div class="p-5 rounded-2xl bg-surface-pure shadow-xs flex flex-col justify-between gap-3">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex text-tertiary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="text-[11px] text-charcoal-muted">3 days ago</span>
+</div>
+<h4 class="font-title-editorial text-sm font-bold text-on-surface">Surpassed all my bridal expectations!</h4>
+<p class="text-xs text-charcoal-muted leading-relaxed font-body-sm">
+              “I wore this for my wedding reception in Delhi. The rose gold luster looks like true heirloom jewelry, not artificial fashion pieces. The weight was surprisingly comfortable for 6 hours of standing and photos.”
+            </p>
+</div>
+<div class="flex items-center justify-between text-xs pt-2">
+<div class="flex items-center gap-1.5 font-medium text-on-surface">
+<span>Ananya Deshmukh</span>
+<span class="text-tertiary material-symbols-outlined text-[14px]">check_circle</span>
+</div>
+<span class="text-[11px] text-charcoal-muted">Verified Buyer • Pune</span>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="p-5 rounded-2xl bg-surface-pure shadow-xs flex flex-col justify-between gap-3">
+<div class="flex items-center justify-between">
+<div class="flex text-tertiary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="text-[11px] text-charcoal-muted">1 week ago</span>
+</div>
+<div class="flex flex-col gap-2">
+<h4 class="font-title-editorial text-sm font-bold text-on-surface">The back Meenakari work is pure art</h4>
+<p class="text-xs text-charcoal-muted leading-relaxed font-body-sm">
+              “The finish is flawless. Even the reverse enamel work didn't snag my raw silk blouse at all. The velvet box it comes in makes it feel like an imperial gift from a regal salon. 10/10 recommend!”
+            </p>
+</div>
+<div class="flex items-center justify-between text-xs pt-2">
+<div class="flex items-center gap-1.5 font-medium text-on-surface">
+<span>Meera Singhania</span>
+<span class="text-tertiary material-symbols-outlined text-[14px]">check_circle</span>
+</div>
+<span class="text-[11px] text-charcoal-muted">Verified Buyer • Mumbai</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Video Lookbook Modal Popup (Hidden by Default) -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/80 backdrop-blur-md hidden items-center justify-center p-4" id="video-modal">
+<div class="bg-surface-pure rounded-3xl max-w-lg w-full p-6 shadow-2xl flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<h4 class="font-title-editorial text-base text-primary font-bold">Bridal Atelier Video Lookbook</h4>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:text-primary transition-colors" onclick="closeVideoModal()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="w-full aspect-[9/16] max-h-[500px] bg-inverse-surface rounded-2xl overflow-hidden relative flex items-center justify-center">
+<img class="w-full h-full object-cover opacity-80" data-alt="Video thumbnail of Indian bridal model turning gently wearing the full Gulmohar set with golden sparkles reflecting off the uncut Polki gems" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASQJL6HpizpMrehKMt4sm7oUzmYirlx41LaegrqaN03tW1zZbHyKVCKEJgwVF7LzsXkYjbUTYMOSkhQH47jijxIyibKPyMmaW69pZbPlMzACg6vH9sJcnIIy5fTuRFGFDnemcX_O0yF8CaIZyqLlUDwyyrP4fkYbCghiWEevfmQfXqkOmU0ZmkphzlDAeemYD9vcAjB0kwORw0AAB5jLK7t4FiS5Uri-gpCvexuA8"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-16 h-16 rounded-full bg-primary/90 text-on-primary flex items-center justify-center shadow-xl animate-pulse">
+<span class="material-symbols-outlined text-[32px]">play_arrow</span>
+</div>
+</div>
+</div>
+<p class="text-xs text-center text-charcoal-muted">Recorded in 4K studio lighting with zero digital filters.</p>
+</div>
+</div>
+<!-- Toast Notification -->
+<div class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 bg-primary text-on-primary px-6 py-3 rounded-full font-label-caps text-xs uppercase tracking-wider shadow-2xl flex items-center gap-2 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="toast-notification">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span id="toast-message">Added to your Trousseau Bag!</span>
+</div>
+</div>
+<!-- Inline Interactive Script -->
+<script>
+  // Image gallery switcher
+  const pdpImages = [
+    {
+      src: "placeholder",
+      alt: "Gulmohar Rose-Gold Polki choker set displayed on a deep burgundy velvet bust jewelry stand, spotlight highlighting AAA uncut stones and seed pearls in luxury studio lighting"
+    },
+    {
+      src: "placeholder",
+      alt: "Elegant Indian bride styled in traditional pastel crimson lehenga wearing the Gulmohar Rose Gold Polki choker set with matching oversized chandbalis and maang tikka, royal editorial portrait"
+    },
+    {
+      src: "placeholder",
+      alt: "Macro extreme close-up of intricate hand-painted crimson and blush meenakari enamel work and bezel-set Polki kundan glass stones on the reverse side of bridal necklace"
+    },
+    {
+      src: "placeholder",
+      alt: "Luxury unboxing packaging featuring rich royal rosewood velvet trunk box with gold embossed AURA JEWELS crest holding the choker set cushioned in satin with certificate of authenticity"
+    }
+  ];
+
+  function switchPdpImage(index) {
+    const mainImg = document.getElementById('pdp-main-img');
+    const thumbBtns = document.querySelectorAll('.thumb-btn');
+    
+    if (pdpImages[index]) {
+      mainImg.src = pdpImages[index].src;
+      mainImg.setAttribute('data-alt', pdpImages[index].alt);
+      
+      thumbBtns.forEach((btn, i) => {
+        if (i === index) {
+          btn.classList.add('ring-2', 'ring-primary', 'opacity-100');
+          btn.classList.remove('opacity-70');
+        } else {
+          btn.classList.remove('ring-2', 'ring-primary', 'opacity-100');
+          btn.classList.add('opacity-70');
+        }
+      });
+    }
+  }
+
+  // Finish selector
+  function selectFinish(finishName, element) {
+    document.getElementById('selected-finish-name').innerText = finishName;
+    document.querySelectorAll('.finish-swatch').forEach(btn => {
+      btn.classList.remove('ring-2', 'ring-primary');
+    });
+    element.classList.add('ring-2', 'ring-primary');
+    showToast('Finish updated to ' + finishName);
+  }
+
+  // Coupon apply
+  function applyCoupon(btn, code, discountAmount) {
+    const feedback = document.getElementById('coupon-feedback');
+    feedback.innerText = `✨ Coupon '${code}' applied! You saved ₹${discountAmount} on checkout.`;
+    feedback.classList.remove('hidden');
+    btn.innerText = 'Applied ✓';
+    btn.classList.add('bg-primary', 'text-on-primary');
+    btn.classList.remove('bg-soft-blush', 'bg-surface-container');
+    showToast(`Applied code: ${code}`);
+  }
+
+  // Pincode checker
+  function checkDeliveryPincode() {
+    const pin = document.getElementById('pincode-input').value.trim();
+    const resultBox = document.getElementById('pincode-result');
+    if (pin.length === 6 && /^\d+$/.test(pin)) {
+      resultBox.innerHTML = `
+        <div class="flex items-center gap-1.5 text-primary font-medium">
+          <span class="material-symbols-outlined text-[16px]">check_circle</span>
+          <span>Express Delivery to <strong>${pin}</strong> confirmed! Arriving in 2 Days.</span>
+        </div>
+        <span class="text-[11px] text-charcoal-muted">Cash on Delivery & Instant Doorstep Inspection available.</span>
+      `;
+    } else {
+      resultBox.innerHTML = `
+        <span class="text-error text-xs font-semibold">Please enter a valid 6-digit Indian PIN code.</span>
+      `;
+    }
+  }
+
+  // Accordion toggle
+  function toggleAccordion(id) {
+    const content = document.getElementById('content-' + id);
+    const icon = document.getElementById('icon-' + id);
+    if (content.classList.contains('hidden')) {
+      content.classList.remove('hidden');
+      icon.innerText = 'expand_less';
+    } else {
+      content.classList.add('hidden');
+      icon.innerText = 'expand_more';
+    }
+  }
+
+  // Bundle pricing calculator
+  function updateBundleTotal() {
+    const b1 = document.getElementById('bundle-item-1').checked;
+    const b2 = document.getElementById('bundle-item-2').checked;
+    
+    let base = 2899;
+    let original = 5999;
+    
+    if (b1) {
+      base += 999;
+      original += 1999;
+    }
+    if (b2) {
+      base += 500;
+      original += 1199;
+    }
+    
+    // Apply extra 20% discount if both added
+    let finalTotal = base;
+    if (b1 && b2) {
+      finalTotal = Math.round(base * 0.88);
+    }
+    
+    document.getElementById('bundle-total-price').innerText = '₹' + finalTotal.toLocaleString('en-IN');
+    document.getElementById('bundle-original-price').innerText = '₹' + original.toLocaleString('en-IN');
+  }
+
+  // Wishlist toggle
+  function toggleWishlist(button) {
+    const icon = button.querySelector('.material-symbols-outlined');
+    if (icon.innerText === 'favorite_border') {
+      icon.innerText = 'favorite';
+      icon.style.fontVariationSettings = "'FILL' 1";
+      showToast('Saved to your Bridal Wishlist ❤️');
+    } else {
+      icon.innerText = 'favorite_border';
+      icon.style.fontVariationSettings = "'FILL' 0";
+      showToast('Removed from Wishlist');
+    }
+  }
+
+  // Add to Bag CTA
+  function handleAddToCart() {
+    const btn = document.getElementById('bag-button-text');
+    btn.innerText = 'ADDING...';
+    setTimeout(() => {
+      btn.innerText = 'ITEM IN BAG (1)';
+      showToast('Gulmohar Set added to your Trousseau Bag! 🛍️');
+    }, 400);
+  }
+
+  function handleQuickUPI() {
+    showToast('Redirecting to 1-Click Razorpay UPI...');
+  }
+
+  function addAllBundleToBag() {
+    showToast('All 3 Bridal Ensemble items added to bag with 20% discount!');
+  }
+
+  // Modal helpers
+  function openVideoModal() {
+    const modal = document.getElementById('video-modal');
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+  }
+
+  function closeVideoModal() {
+    const modal = document.getElementById('video-modal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+  }
+
+  // Toast System
+  function showToast(msg) {
+    const toast = document.getElementById('toast-notification');
+    const toastMsg = document.getElementById('toast-message');
+    toastMsg.innerText = msg;
+    toast.classList.remove('translate-y-24', 'opacity-0');
+    toast.classList.add('translate-y-0', 'opacity-100');
+    setTimeout(() => {
+      toast.classList.remove('translate-y-0', 'opacity-100');
+      toast.classList.add('translate-y-24', 'opacity-0');
+    }, 2800);
+  }
+
+  // Mobile Sticky Bottom Bar Scroll Observer
+  window.addEventListener('scroll', () => {
+    const stickyBar = document.getElementById('sticky-pdp-bar');
+    if (window.scrollY > 420) {
+      stickyBar.classList.remove('translate-y-full');
+    } else {
+      stickyBar.classList.add('translate-y-full');
+    }
+  });
+</script></main><footer class="w-full bg-surface-container-low text-on-surface pt-space-2xl pb-space-lg"><div class="max-w-[1360px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin"><div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg pb-space-xl"><div class="flex items-center gap-space-md p-space-md rounded-xl bg-surface-pure shadow-[0_2px_12px_-2px_rgba(114,28,52,0.04)]"><span class="material-symbols-outlined text-[32px] text-primary">verified</span><div><p class="font-label-caps text-label-caps tracking-wider uppercase text-primary">Authenticity Certified</p><p class="font-body-sm text-body-sm text-on-surface-variant">Handcrafted 22k Gold & Micro-finish Brass</p></div></div><div class="flex items-center gap-space-md p-space-md rounded-xl bg-surface-pure shadow-[0_2px_12px_-2px_rgba(114,28,52,0.04)]"><span class="material-symbols-outlined text-[32px] text-primary">shield</span><div><p class="font-label-caps text-label-caps tracking-wider uppercase text-primary">100% Anti-Tarnish</p><p class="font-body-sm text-body-sm text-on-surface-variant">Skin-safe hypoallergenic e-coating finish</p></div></div><div class="flex items-center gap-space-md p-space-md rounded-xl bg-surface-pure shadow-[0_2px_12px_-2px_rgba(114,28,52,0.04)]"><span class="material-symbols-outlined text-[32px] text-primary">published_with_changes</span><div><p class="font-label-caps text-label-caps tracking-wider uppercase text-primary">7-Day Easy Exchange</p><p class="font-body-sm text-body-sm text-on-surface-variant">Hassle-free doorstep pickup across India</p></div></div></div><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl pb-space-2xl"><div class="lg:col-span-2 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-primary">AURA JEWELS</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Handcrafted brass couture, heritage Kundan Jadau, and 22k micron gold-plated heirloom ornaments. Sculpted for celebratory grace and modern Indian brides.</p><div class="flex flex-col gap-space-xs pt-space-xs"><p class="font-label-caps text-label-caps tracking-widest uppercase text-on-surface">JOIN THE AURA ROYALE CLUB</p><p class="font-body-sm text-body-sm text-on-surface-variant">Receive an exclusive 15% VIP discount code on your first couture purchase.</p><form class="flex items-center gap-space-xs mt-space-xs max-w-md" onsubmit="return false;"><input class="w-full bg-surface-pure px-4 py-2.5 rounded-full font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none" placeholder="Enter your email address" type="email"/><button class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-label-caps text-label-caps tracking-widest uppercase hover:bg-deep-rosewood transition-colors whitespace-nowrap" type="button">CLAIM 15%</button></form></div></div><div class="flex flex-col gap-space-md"><h4 class="font-label-caps text-label-caps tracking-widest uppercase text-primary">Quick Links</h4><nav class="flex flex-col gap-space-sm"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="home" href="#">Home</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="earrings-and-jhumkas" href="#">Earrings & Jhumkas</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="necklaces-and-chokers" href="#">Necklaces & Chokers</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="kundan-and-polki" href="#">Kundan & Polki</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="bridal-trousseau" href="#">Bridal Trousseau</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="product-detail" href="#">Product Detail</a></nav></div><div class="flex flex-col gap-space-md"><h4 class="font-label-caps text-label-caps tracking-widest uppercase text-primary">Customer Care</h4><nav class="flex flex-col gap-space-sm"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="cart" href="#">Shopping Bag</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="checkout" href="#">Express Checkout</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="track-order" href="#">Track Your Order</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="shipping-policy" href="#">Shipping & Delivery</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="returns-policy" href="#">Returns & Exchanges</a></nav></div><div class="flex flex-col gap-space-md"><h4 class="font-label-caps text-label-caps tracking-widest uppercase text-primary">Policies & Legal</h4><nav class="flex flex-col gap-space-sm"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="privacy-policy" href="#">Privacy Policy</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="terms-of-service" href="#">Terms of Service</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="authenticity-certificate" href="#">Purity Certification</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="custom-bridal-appointments" href="#">Boutique Appointments</a></nav></div></div><div class="flex flex-col md:flex-row items-center justify-between gap-space-md pt-space-lg"><div class="flex items-center gap-space-sm flex-wrap text-on-surface-variant"><span class="font-label-caps text-label-caps tracking-wider uppercase text-on-surface-variant">SECURE PAYMENTS:</span><span class="px-2.5 py-1 bg-surface-pure rounded text-body-sm font-label-ui text-on-surface">UPI</span><span class="px-2.5 py-1 bg-surface-pure rounded text-body-sm font-label-ui text-on-surface">Google Pay</span><span class="px-2.5 py-1 bg-surface-pure rounded text-body-sm font-label-ui text-on-surface">PhonePe</span><span class="px-2.5 py-1 bg-surface-pure rounded text-body-sm font-label-ui text-on-surface">Paytm</span><span class="px-2.5 py-1 bg-surface-pure rounded text-body-sm font-label-ui text-on-surface">Razorpay</span><span class="px-2.5 py-1 bg-surface-pure rounded text-body-sm font-label-ui text-on-surface">Visa / Mastercard</span><span class="px-2.5 py-1 bg-surface-pure rounded text-body-sm font-label-ui text-on-surface">COD Available</span></div><div class="font-body-sm text-body-sm text-on-surface-variant text-center md:text-right">© 2025 AURA JEWELS Atelier Private Limited. All Rights Reserved.</div></div></div></footer></body></html>
